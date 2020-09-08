@@ -32,14 +32,15 @@ limitations under the License.
     <title>Lo-Fi Player</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102358307-3"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80107903-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
       gtag('js', new Date());
-      gtag('config', 'UA-102358307-3');
+
+      gtag('config', 'UA-80107903-1');
     </script>
 
     <!-- import the webpage's stylesheet -->
@@ -406,6 +407,30 @@ limitations under the License.
                 </div>
 
                 <div>
+                  <label>volume</label>
+                  <input
+                    id="drum-volume-slider"
+                    type="range"
+                    class="nes-progress"
+                    min="0"
+                    max="100"
+                    value="100"
+                  />
+                </div>
+
+                <div>
+                  <label>tone</label>
+                  <input
+                    id="drum-tone-slider"
+                    type="range"
+                    class="nes-progress"
+                    min="0"
+                    max="100"
+                    value="100"
+                  />
+                </div>
+
+                <div>
                   <label>pattern</label>
                   <select id="drum-patterns-select">
                     <option value="0">classic</option>
@@ -462,7 +487,7 @@ limitations under the License.
       </div>
 
       <footer>
-        <span style="color: white">v.1.0</span>
+        <span style="color: white">v.1.1</span>
       </footer>
     </div>
 
